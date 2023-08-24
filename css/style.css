@@ -71,12 +71,12 @@ li {
   margin: 0 auto;
 }
 
-.header__top {
+.header-top {
   height: 50px;
   background-color: #333333;
 }
 
-.header__navigation {
+.header-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,18 +87,15 @@ li {
   padding: 0 50px;
 }
 
-.header__top-menu {
+.header-top-menu {
   margin: 0 30px;
 }
-
-.header__top-menu-list {
+.header-top-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.header__top-menu-button,
-.header__top-menu-button-bloggers {
+.header-top-menu__button, .header-top-menu__bloggers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,26 +108,20 @@ li {
   height: 50px;
   padding: 0 5px;
 }
-
-.header__top-menu-button:hover,
-.header__top-menu-button:hover .header__top-menu-link {
+.header-top-menu__link {
+  color: white;
+  font-size: 14px;
+}
+.header-top-menu__button:hover, .header-top-menu__button:hover .header-top-menu__link {
   background-color: #fff;
   cursor: pointer;
   color: red;
 }
-
-.header__top-menu-link {
-  color: white;
-  font-size: 14px;
-}
-
-.header__top-menu-button-bloggers:hover,
-.header__top-menu-button-bloggers:hover .header__top-menu-link {
+.header-top-menu__bloggers:hover, .header-top-menu__bloggers:hover .header-top-menu__link {
   cursor: pointer;
   color: red;
 }
-
-.header-top-menu-icon {
+.header-top-menu__icon {
   padding: 0 20px;
 }
 
