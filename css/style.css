@@ -99,12 +99,12 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 50px;
   padding: 0 5px;
 }
@@ -125,6 +125,67 @@ li {
   padding: 0 20px;
 }
 
-.header-main__bg-img {
-  width: 100%;
+.header-main {
+  background-image: url(../img/top_gun.webp);
+  background-repeat: no-repeat;
+  width: 1140px;
+  height: 577px;
+}
+.header-main__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: rgba(30, 28, 43, 0.684);
+  width: 1140px;
+  height: 577px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header-main__bg:hover {
+  background-color: rgba(33, 32, 45, 0.818);
+}
+.header-main__volume-icon {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.info-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+}
+.info-panel__img {
+  width: 150px;
+}
+.info-panel__info {
+  padding: 30px 0 0 30px;
+}
+.info-panel__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 12px;
+}
+.info-panel__top-items {
+  margin-right: 20px;
+}
+.info-panel__top-items_discount {
+  background-color: #fc363b;
+  border-radius: 3px;
+  padding: 2px 5px 2px 5px;
+}
+.info-panel__top-items_orange {
+  color: #f72;
 }/*# sourceMappingURL=style.css.map */

@@ -41,9 +41,7 @@ li {
 
     &__button,
     &__bloggers {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex;
         height: 50px;
         padding: 0 5px;
     }
@@ -75,7 +73,67 @@ li {
 
 
 
+.header-main {
+    background-image: url(../img/top_gun.webp);
+    background-repeat: no-repeat;
+    width: 1140px;
+    height: 577px;
 
-.header-main__bg-img {
-    width: 100%;
+    &__bg {
+        display: flex;
+        align-items: flex-end;
+        background-color: rgba(30, 28, 43, 0.684);
+        width: 1140px;
+        height: 577px;
+        position: relative;
+        transition: .3s;
+    }
+
+    &__bg:hover {
+        background-color: rgba(33, 32, 45, 0.818);
+    }
+
+    &__volume-icon {
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
 }
+
+.info-panel {
+    display: flex;
+    padding: 40px;
+
+    &__img {
+        width: 150px;
+    }
+
+    &__info {
+        padding: 30px 0 0 30px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+    }
+
+    &__top-items {
+        margin-right: 20px;
+    }
+
+    &__top-items_discount {
+        background-color: #fc363b;
+        border-radius: 3px;
+        padding: 2px 5px 2px 5px;
+    }
+
+    &__top-items_orange {
+        color: #f72;
+    }
+}
+
+
