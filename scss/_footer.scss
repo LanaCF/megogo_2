@@ -1,0 +1,172 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    background: #e1e1e1;    
+    padding: 70px 0 70px 0;
+    width: 1150px;
+}
+
+.wrapper-footer-top {
+    display: flex;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.footer-top-info {
+    margin-right: 10px;        
+}
+
+.footer-top-list {
+    margin-right: 10px;
+}
+
+.footer-top-list li {
+    margin-bottom: 10px;
+}
+
+.footer-top-title {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.footer-top-title-red {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer-top-title-red:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.box-footer-top-list {
+    display: flex;    
+}
+
+.grey-red:hover {
+    color: red;
+}
+
+.arrow-phon {
+    font-size: 14px;
+}
+
+.footer-top-list-contact {
+    display: flex;
+}
+
+.footer-top-phon {
+    font-size: 20px;    
+}
+
+.padding-left-5 {
+    padding-left: 5px;
+}
+
+.phon-free {
+ color: #cccccccc;
+}
+
+.padding-left-15 {
+    padding-left: 15px;
+}
+
+.wrapper-apps-social {
+    display: flex;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.wrapper-apps-social {
+    display: flex;
+    margin-top: 100px;
+}
+
+.box-apps {
+    width: 570px;
+    padding-right: 50px;
+}
+
+.apps-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-social {
+    width: 350px;
+}
+
+.footer-social-icon {
+    display: flex;
+}
+
+.facebook-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1e1e1;
+    font-size: 15px;    
+    border-radius: 100%;
+    width: 30px;
+    background: #cccccccc;
+    margin-right: 10px;
+}
+
+.facebook-footer:hover {
+    background: #0f7aac;
+}
+
+.telegram-footer {
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 100%;    
+    color: #cccccccc;
+ }
+
+.telegram-footer:hover {
+    color: #85caea;
+}
+
+.phone-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1e1e1;
+    font-size: 15px;    
+    border-radius: 100%;
+    width: 30px;
+    background: #cccccccc;
+ }
+
+.phone-footer:hover {
+    background: #782059;
+}
+
+.footer-copyright {
+    display: flex;
+}
+
+.footer-copyright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    padding-right: 10px;
+}
+
+.footer-rating-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}

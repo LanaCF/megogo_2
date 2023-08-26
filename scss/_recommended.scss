@@ -1,133 +1,128 @@
-.main-recommended-movie {
-    display: flex;
+.main-recommended {
+    @include flex;
     padding: 70px 0 90px 0;
     width: 1150px;
-    background: none;
+
+    &__block {
+        width: 980px;
+    }
 }
 
-.wrapper-recommended-movie {
-    width: 980px;
-    margin: 0 auto;
-}
-
-.wrapper-recommended-movie-title {
+.main-recommended-top {
     display: flex;
     justify-content: space-between;
+    
+    &__title {
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+
+    &__arowws {
+        display: flex;    
+        cursor: pointer;
+    }
+    
+    &__aroww-icon {
+        @include flex;
+        color: #c4c4c4;
+        width: 40px;
+        height: 30px;
+        border: 1px solid #c4c4c4;
+    }
+    
+    &__aroww-icon_right {
+        color: rgb(59, 59, 59);
+    }
+    
+    &__aroww-icon_right:hover {
+        color: red;
+    }
 }
 
-.recommended-movie-text {
-    font-size: 30px;
-    padding-bottom: 40px;
-}
-
-.recommended-movie-list {
+.main-recommended-list {
     display: flex;
     justify-content: space-between;
     width: 980px;
 }
 
-.box-recommended-movie {
+.main-recommended-movie {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: calc(100% / 4);
     margin-right: 20px;
+
+    &__link {
+        display: flex;
+        flex-direction: column;      
+    }
+    
+    &__img-bgd1 {
+        background: url('../img/top_gan_2.webp');
+    }
+
+    &__img-bgd2 {
+        background: url('../img/dni_gromu.webp');
+    }
+
+    &__img-bgd3 {
+        background: url('../img/misiya_nemozhliva.jpg');
+    }
+
+    &__img-bgd4 {
+        background: url('../img/dzhek_richer.jpg');
+    }
+    
+    &__black-bgd {
+        @include flex;
+        flex-direction: column;
+        height: 320px;
+        width: 100%;
+        color: transparent;
+    }
+    
+    &__play-icon {
+        @include flex;    
+        color: transparent;
+    }
+    
+    &__play {
+        color: transparent;
+    }
+    
+    &__title {
+        font-size: 15px;
+        padding: 10px 0 3px 0;
+    }
+    
+    &__link:hover &__black-bgd {
+        background: rgba(0, 0, 0, 0.577);
+        height: 320px;
+        width: 100%;
+    }
+    
+    &__link:hover &__play-icon,
+    &__link:hover &__play {
+        color: white;
+    }
+    
+    &__link:hover &__title {
+        color: red;
+    }
+    
+    &__year {
+         font-size: 12px;   
+    }
+    
+    &__buy {
+        padding-top: 10px;
+        color: #00b2b2;
+        font-size: 12px;
+    }
 }
 
-.recommended-movie-link {
-    display: flex;
-    flex-direction: column;      
-}
-
-.img-bgd1 {
+.img-size {
     height: 320px;
     width: 100%;
-    background: url('../img/recommended_movie_1.webp');
     background-size: cover;
-    background-position: bottom;  
 }
-
-.black-bgd {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 320px;
-    width: 100%;
-    color: transparent;
-}
-
-.recommended-movie-play {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    color: transparent;
-}
-
-.play {
-    color: transparent;
-}
-
-.recommended-movie-title {
-    font-size: 15px;
-    padding: 10px 0 3px 0;
-}
-
-.recommended-movie-link:hover .black-bgd {
-    background: rgba(0, 0, 0, 0.577);
-    height: 320px;
-    width: 100%;
-}
-
-.recommended-movie-link:hover .play {
-    color: white;
-}
-
-.recommended-movie-link:hover .recommended-movie-play {
-    color: white;
-}
-
-.recommended-movie-link:hover .recommended-movie-title {
-    color: red;
-}
-
-.recommended-movie-title-year {
-     font-size: 12px;   
-}
-
-.recommended-movie-title-buy {
-    padding-top: 10px;
-    color: #00b2b2;
-    font-size: 12px;
-}
-
-.img-bgd2 {    
-    height: 320px;
-    width: 100%;
-    background: url('../img/recommended_movie_2.webp');
-    background-size: cover;
-    background-position: bottom;    
-}
-
-.img-bgd3 {
-    height: 320px;
-    width: 100%;
-    background: url('../img/recommended_movie_3.webp');
-    background-size: cover;
-    background-position: bottom;    
-}
-
-.img-bgd4 {
-    height: 320px;
-    width: 100%;
-    background: url('../img/recommended_movie_4.jpg');
-    background-size: cover;
-    background-position: bottom;    
-}
-
-.recommended-movie-title-free {
-    padding-top: 10px;
-    color: grey;
-    font-size: 12px;
-}
-
