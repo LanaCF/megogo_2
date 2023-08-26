@@ -138,7 +138,7 @@ li {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-color: rgba(30, 28, 43, 0.684);
+  background-color: rgba(17, 23, 41, 0.621);
   width: 1140px;
   height: 577px;
   position: relative;
@@ -162,13 +162,16 @@ li {
   display: flex;
   padding: 40px;
 }
-.info-panel__img {
+
+.info-panel-poster__img {
   width: 150px;
 }
-.info-panel__info {
+
+.info-panel-block {
   padding: 30px 0 0 30px;
 }
-.info-panel__top {
+
+.info-panel-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,14 +181,121 @@ li {
   color: white;
   font-size: 12px;
 }
-.info-panel__top-items {
+.info-panel-top__items {
   margin-right: 20px;
 }
-.info-panel__top-items_discount {
+.info-panel-top__items_discount {
   background-color: #fc363b;
   border-radius: 3px;
   padding: 2px 5px 2px 5px;
 }
-.info-panel__top-items_orange {
+.info-panel-top__items_orange {
   color: #f72;
+}
+
+.info-panel-title__movie {
+  color: white;
+  margin: 20px 0;
+}
+
+.info-panel-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-panel-watch {
+  width: 155px;
+  margin-right: 35px;
+}
+.info-panel-watch__button-watch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #f60;
+}
+.info-panel-watch__button-watch:hover {
+  background-color: #f30;
+}
+.info-panel-watch__watch-icon {
+  color: white;
+  margin-right: 5px;
+}
+.info-panel-watch__button-name {
+  font-size: 16px;
+  color: white;
+}
+.info-panel-watch__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+}
+.info-panel-watch__description-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.info-panel-add {
+  width: 100px;
+  margin-right: 35px;
+}
+.info-panel-add__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  border-radius: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+.info-panel-add:hover .info-panel-add__icon {
+  color: #f30;
+}
+
+.info-panel-rating {
+  width: 35px;
+  margin-right: 35px;
+}
+.info-panel-rating__icon-like, .info-panel-rating__icon-dislike {
+  font-size: 32px;
+}
+.info-panel-rating__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+}
+.info-panel-rating:hover, .info-panel-rating:hover .info-panel-rating__icon-like, .info-panel-rating:hover .like {
+  color: green;
+  cursor: pointer;
+}
+.info-panel-rating__dislike:hover, .info-panel-rating__dislike:hover .info-panel-rating__icon-dislike, .info-panel-rating__dislike:hover .dislike {
+  color: red;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

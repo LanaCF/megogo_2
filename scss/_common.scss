@@ -82,7 +82,7 @@ li {
     &__bg {
         display: flex;
         align-items: flex-end;
-        background-color: rgba(30, 28, 43, 0.684);
+        background-color: rgba(17, 23, 41, 0.621);
         width: 1140px;
         height: 577px;
         position: relative;
@@ -105,35 +105,126 @@ li {
 .info-panel {
     display: flex;
     padding: 40px;
+}
 
-    &__img {
-        width: 150px;
-    }
+.info-panel-poster__img {
+    width: 150px;
+}
 
-    &__info {
-        padding: 30px 0 0 30px;
-    }
+.info-panel-block {
+    padding: 30px 0 0 30px;
+}
 
-    &__top {
-        display: flex;
-        align-items: center;
-        color: white;
-        font-size: 12px;
-    }
+.info-panel-top {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
 
-    &__top-items {
+    &__items {
         margin-right: 20px;
     }
 
-    &__top-items_discount {
+    &__items_discount {
         background-color: #fc363b;
         border-radius: 3px;
         padding: 2px 5px 2px 5px;
     }
 
-    &__top-items_orange {
+    &__items_orange {
         color: #f72;
     }
 }
+
+.info-panel-title__movie {
+    color: white;
+    margin: 20px 0;
+}
+
+.info-panel-actions {
+    display: flex;
+}
+
+.info-panel-watch {
+    width: 155px;
+    margin-right: 35px;
+
+    &__button-watch {
+        @include flex;
+        height: 45px;
+        border-radius: 5px;
+        background-color: #f60;
+    }
+    
+    &__button-watch:hover {
+        background-color: #f30;
+    }
+    
+    &__watch-icon {
+        color: white;
+        margin-right: 5px;
+    }
+    
+    &__button-name {
+        font-size: 16px;
+        color: white;
+    }
+    
+    &__description {
+        @include flex;
+        height: 35px;
+    }
+    
+    &__description-text {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+    }
+}
+    
+.info-panel-add {
+    width: 100px;
+    margin-right: 35px;
+
+    &__button {
+        @include flex;
+        height: 45px;
+        border-radius: 5px;
+        border: 3px solid rgba(255, 255, 255, 0.7);
+    }
+
+    &:hover &__icon {
+        color: #f30;
+    }
+}
+
+.info-panel-rating {
+    width: 35px;
+    margin-right: 35px;
+
+    &__icon-like,
+    &__icon-dislike {
+        font-size: 32px;
+    }
+
+    &__button {
+        @include flex;
+        height: 45px;
+    }
+
+    &:hover,
+    &:hover &__icon-like,
+    &:hover .like {
+        color: green;
+        cursor: pointer;
+    }
+
+    &__dislike:hover,
+    &__dislike:hover &__icon-dislike,
+    &__dislike:hover .dislike {
+        color: red;
+        cursor: pointer;
+    }
+}
+
 
 
