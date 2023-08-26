@@ -1,0 +1,133 @@
+.main-recommended-movie {
+    display: flex;
+    padding: 70px 0 90px 0;
+    width: 1150px;
+    background: none;
+}
+
+.wrapper-recommended-movie {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.wrapper-recommended-movie-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended-movie-text {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.recommended-movie-list {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+}
+
+.box-recommended-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 4);
+    margin-right: 20px;
+}
+
+.recommended-movie-link {
+    display: flex;
+    flex-direction: column;      
+}
+
+.img-bgd1 {
+    height: 320px;
+    width: 100%;
+    background: url('../img/recommended_movie_1.webp');
+    background-size: cover;
+    background-position: bottom;  
+}
+
+.black-bgd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 100%;
+    color: transparent;
+}
+
+.recommended-movie-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: transparent;
+}
+
+.play {
+    color: transparent;
+}
+
+.recommended-movie-title {
+    font-size: 15px;
+    padding: 10px 0 3px 0;
+}
+
+.recommended-movie-link:hover .black-bgd {
+    background: rgba(0, 0, 0, 0.577);
+    height: 320px;
+    width: 100%;
+}
+
+.recommended-movie-link:hover .play {
+    color: white;
+}
+
+.recommended-movie-link:hover .recommended-movie-play {
+    color: white;
+}
+
+.recommended-movie-link:hover .recommended-movie-title {
+    color: red;
+}
+
+.recommended-movie-title-year {
+     font-size: 12px;   
+}
+
+.recommended-movie-title-buy {
+    padding-top: 10px;
+    color: #00b2b2;
+    font-size: 12px;
+}
+
+.img-bgd2 {    
+    height: 320px;
+    width: 100%;
+    background: url('../img/recommended_movie_2.webp');
+    background-size: cover;
+    background-position: bottom;    
+}
+
+.img-bgd3 {
+    height: 320px;
+    width: 100%;
+    background: url('../img/recommended_movie_3.webp');
+    background-size: cover;
+    background-position: bottom;    
+}
+
+.img-bgd4 {
+    height: 320px;
+    width: 100%;
+    background: url('../img/recommended_movie_4.jpg');
+    background-size: cover;
+    background-position: bottom;    
+}
+
+.recommended-movie-title-free {
+    padding-top: 10px;
+    color: grey;
+    font-size: 12px;
+}
+

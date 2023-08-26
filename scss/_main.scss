@@ -1,0 +1,126 @@
+main {
+    width: 1150px;
+    background: white;
+    padding: 50px 85px;
+}
+
+.main-menu {
+    display: flex;
+    
+    &__text {
+        font-size: 12px;
+        padding: 5px 0;
+        margin-right: 40px;
+    }
+    
+    &__text:hover {
+        color: red;
+    }
+
+    &__text_red-line {
+        border-bottom: 2px solid red;
+    }
+}
+
+.main-categories {
+    display: flex;
+    margin: 15px 0;
+    padding-right: 5px;
+
+    &__text {
+        color: black;
+        padding-right: 5px;
+    }
+    
+    &__link {
+        color: black;
+        padding-right: 5px;
+    }
+    
+    &__link:hover {
+        color: red;
+    }
+}
+
+.main-fullhd__button {
+    font-size: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.605);
+    border-radius: 2px;
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+.main-plot-movie {    
+    width: 640px;
+
+    &__text {
+        font-size: 16px;
+        margin: 15px 0;
+        line-height: 25px;
+    }
+}
+
+.main-facebook {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    padding-bottom: 40px;
+
+    &__icon {
+        @include flex;
+        width: 50px;
+        height: 25px;
+        text-align: center;
+        border: 1px solid #acacac;
+        border-radius: 2px;    
+        color: #5252d8;
+        transition: .3s;
+    }
+
+    &__icon:hover {
+        color: white;
+        background: #5252d8;
+    }
+}
+
+.main__specifications {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #acacac;
+    padding: 40px 0;
+    width: 670px;
+}
+
+.main-devices {
+    margin-right: 50px;
+    width: calc(100% / 3);
+
+    &__title {
+        font-size: 12px;
+        width: auto;
+        padding-bottom: 10px;
+    }
+    
+    &__items {
+        display: flex;
+        flex-direction: column;    
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;    
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;    
+    }
+    
+    &__name {      
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}
+

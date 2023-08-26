@@ -1,0 +1,205 @@
+.header-top {
+    height: 50px;
+    background-color: #333333;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 50px;
+}
+
+.header-top-menu {
+    margin: 0 30px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__button,
+    &__bloggers {
+        @include flex;
+        height: 50px;
+        padding: 0 5px;
+    }
+
+    &__link {
+        color: white;
+        font-size: 14px;
+    }
+
+    &__button:hover,
+    &__button:hover &__link {
+        background-color: #fff;
+        cursor: pointer;
+        color: red;
+    }
+
+    &__bloggers:hover,
+    &__bloggers:hover &__link {
+        cursor: pointer;
+        color: red;
+    }
+
+    &__icon {
+        padding: 0 20px;
+    }
+}
+
+
+
+
+
+.header-main {
+    background-image: url(../img/top_gun.webp);
+    background-repeat: no-repeat;
+    width: 1150px;
+    height: 577px;
+
+    &__bg {
+        display: flex;
+        align-items: flex-end;
+        background-color: rgba(17, 23, 41, 0.621);
+        width: 1150px;
+        height: 577px;
+        position: relative;
+        transition: .3s;
+    }
+
+    &__bg:hover {
+        background-color: rgba(33, 32, 45, 0.818);
+    }
+
+    &__volume-icon {
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+.info-panel {
+    display: flex;
+    padding: 40px;
+}
+
+.info-panel-poster__img {
+    width: 150px;
+}
+
+.info-panel-block {
+    padding: 30px 0 0 30px;
+}
+
+.info-panel-top {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+
+    &__items {
+        margin-right: 20px;
+    }
+
+    &__items_discount {
+        background-color: #fc363b;
+        border-radius: 3px;
+        padding: 2px 5px 2px 5px;
+    }
+
+    &__items_orange {
+        color: #f72;
+    }
+}
+
+.info-panel-title__movie {
+    color: white;
+    margin: 20px 0;
+}
+
+.info-panel-actions {
+    display: flex;
+}
+
+.info-panel-watch {
+    width: 155px;
+    margin-right: 35px;
+
+    &__button-watch {
+        @include flex;
+        height: 45px;
+        border-radius: 5px;
+        background-color: #f60;
+    }
+    
+    &__button-watch:hover {
+        background-color: #f30;
+    }
+    
+    &__watch-icon {
+        color: white;
+        margin-right: 5px;
+    }
+    
+    &__button-name {
+        font-size: 16px;
+        color: white;
+    }
+    
+    &__description {
+        @include flex;
+        height: 35px;
+    }
+    
+    &__description-text {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+    }
+}
+    
+.info-panel-add {
+    width: 100px;
+    margin-right: 35px;
+
+    &__button {
+        @include flex;
+        height: 45px;
+        border-radius: 5px;
+        border: 3px solid rgba(255, 255, 255, 0.7);
+    }
+
+    &:hover &__icon {
+        color: #f30;
+    }
+}
+
+.info-panel-rating {
+    width: 35px;
+    margin-right: 35px;
+
+    &__icon-like,
+    &__icon-dislike {
+        font-size: 32px;
+    }
+
+    &__button {
+        @include flex;
+        height: 45px;
+    }
+
+    &:hover,
+    &:hover &__icon-like,
+    &:hover .like {
+        color: green;
+        cursor: pointer;
+    }
+
+    &__dislike:hover,
+    &__dislike:hover &__icon-dislike,
+    &__dislike:hover .dislike {
+        color: red;
+        cursor: pointer;
+    }
+}
