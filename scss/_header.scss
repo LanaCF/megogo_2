@@ -6,6 +6,7 @@
 .header-navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 50px;
     padding: 0 50px;
 }
@@ -47,9 +48,47 @@
     }
 }
 
+.header-user-widgets {
+    display: flex;
+    align-items: center;
 
+    &__tariffs-button {
+        display: flex;
+        align-items: center;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 0 15px;
+        height: 30px;
+    }
+    
+    &__tariffs-button:hover {
+        color: red;
+        border: 1px solid red;
+    }
+    
+    &__search-icon {  
+        color: white;
+        padding: 0 15px;
+    }
+    
+    &__search-icon:hover {
+        color: red;
+    }
 
-
+    &__lang-link,
+    &__login-link {
+        font-size: 14px;
+    }
+    
+    &__lang-link:hover {
+        color: white;
+    }
+    
+    &__login-link {
+        padding: 0 15px;
+    }
+}
 
 .header-main {
     background-image: url(../img/top_gun.webp);
